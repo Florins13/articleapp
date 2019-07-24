@@ -41,6 +41,9 @@ h2 {
       margin-left: 11px;
       margin-top: auto;
     }
+    ul{
+      list-style-type: circle;
+    }
 }
 
 
@@ -50,5 +53,10 @@ h2 {
       width: 300px;
       margin-left: 11px;
       margin-top: auto;
+    }
+    /* Give the list a center effect on bigger screens */
+    ul.a {
+      list-style-type: circle;
+      margin-left: 40%;
     }
 }

@@ -16,7 +16,7 @@ export default class Article extends Component {
             .then(json => {
                 this.setState({
                     isLoaded: true,
-                    article: json,
+                    article: json, //set data
                 });
             })
     }

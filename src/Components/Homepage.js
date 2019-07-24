@@ -18,7 +18,7 @@ export default class Homepage extends Component {
             .then(json => {
                 this.setState({
                     isLoaded: true,
-                    articles: json,
+                    articles: json, //set data
                 });
             })
     }
@@ -36,7 +36,7 @@ export default class Homepage extends Component {
             return (
                 <div>
                     <h1 className="text-center"> List of articles</h1>
-                    <ul>
+                    <ul className="a">
                         {articles.map((item, i) =>
                             <li key={i}>
                                 <Link to={"/article/" + i}>
