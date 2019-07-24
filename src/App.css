@@ -1,0 +1,54 @@
+/* Image 100% of div */
+.imgArticle{
+  width: 100%;
+}
+
+/* Change circles of list */
+ul{
+  list-style-type: circle;
+}
+
+/* Styling the text*/
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  padding-bottom: 13px;
+}
+
+.textArticle{
+  text-align: justify;
+  text-indent: 50px;
+}
+
+
+/* Add some padding around our content inside the card */
+.card{
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+
+/* Make the image of article smaller on devices under 768 px */
+@media screen and (max-width: 768px) {
+    .imgDiv{
+      width: 150px;
+      margin-left: 11px;
+      margin-top: auto;
+    }
+}
+
+
+/* Make the image of article greater on devices greater than 768 px */
+@media screen and (min-width: 769px) {
+    .imgDiv{
+      width: 300px;
+      margin-left: 11px;
+      margin-top: auto;
+    }
+}
