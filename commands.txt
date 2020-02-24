@@ -1,0 +1,20 @@
+json-server -p 4000 db.json
+npm install
+npm start
+json-server --host 51.91.250.84 db.json
+
+
+### Nginx
+server {
+       listen 8000;
+       listen [::]:8000;
+
+       server_name 51.91.250.84;
+
+       root home/florin/reactlive/fisier;
+       index index.html;
+
+       location / {
+               try_files $uri $uri/ =404;
+       }
+}
